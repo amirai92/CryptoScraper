@@ -1,8 +1,12 @@
 import requests
 import os
 from prettytable import PrettyTable
+from dotenv import load_dotenv
+load_dotenv()
 
-api_key = os.environ.get('api_key')
+
+
+api_key = os.getenv("api_key")
 
 
 class CryptoCurrency:
